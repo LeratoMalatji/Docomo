@@ -15,3 +15,27 @@ Cucumber and Rest-Assured maven based automation framework to test an applicatio
 3.With an invalid uuid you should get a 400
 
 4.Only one concurrent refund operation (on the same transaction id) can be performed, so the resource should be blocked if another refund is being processed. Failing concurrencies should get a 423
+
+## Project structure 
+
+src
+
+  --- test
+  
+       ----java
+       
+            *This is here where the Test runner class is located called CucucmberTestRunner.java used to run all the feature files*
+            
+         `----stepDefinitions
+         
+              *A Step Definition is a small piece of code with a pattern attached to it or in other words a Step Definition is a java method in a class with an annotation above it.*  
+              
+        ----resources
+        
+            *This is where the extent reporort property and extendt config file is located to customize the reporting.*
+        
+             ----feature
+                 *This is where the cucumber feature files are located 
+        
+          
+        
